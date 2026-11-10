@@ -10,6 +10,17 @@
    "manual": 0,
    "fail": 0,
    "skip": 0
+  },
+  {
+   "started_at": "2026-11-10 16:14:08",
+   "finished_at": "2026-11-10 16:15:06",
+   "status": "success",
+   "listed": 522,
+   "ok": 1,
+   "check": 0,
+   "manual": 0,
+   "fail": 0,
+   "skip": 0
   }
  ],
  "records": [
@@ -21,7 +32,16 @@
    "url": "https://www.stylec.co.kr/trials/160373",
    "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793756754995.jpg",
    "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:15:01",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[어반코디] 사이드 삼선 와이드 절개 트레이닝 팬츠",
+   "url": "https://www.stylec.co.kr/trials/160042",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793665278551.jpg",
+   "img_checked": true
   }
  ],
- "updated_at": "2026-11-10 16:03:31"
+ "updated_at": "2026-11-10 16:15:06"
 }
