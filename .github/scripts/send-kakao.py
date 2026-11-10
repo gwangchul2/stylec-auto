@@ -1,7 +1,8 @@
 import json
 import os
+import re
 from urllib.error import HTTPError
-from urllib.parse import urlencode
+from urllib.parse import urlencode, urlsplit
 from urllib.request import Request, urlopen
 
 
@@ -12,7 +13,13 @@ def post(url, form, token=None):
         with urlopen(request, timeout=30) as response:
             return json.load(response)
     except HTTPError as error:
-        raise SystemExit(f"Kakao API request failed (HTTP {error.code}).") from None
+        try:
+            details = json.load(error)
+        except ValueError:
+            details = {}
+        code = str(details.get("error_code", details.get("code", "")))
+        code = code if re.fullmatch(r"(?:KOE[0-9]+|-?[0-9]+)", code) else "unknown"
+        raise SystemExit(f"Kakao {urlsplit(url).path} failed (HTTP {error.code}, {code}).") from None
 
 
 def main():
