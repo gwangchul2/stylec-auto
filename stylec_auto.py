@@ -40,6 +40,12 @@ DEFAULT_LIST_URL = (
 VISIT_LIST_URL = DEFAULT_LIST_URL.replace(
     "%EC%A0%9C%EA%B3%B5%ED%98%95", "%EB%B0%A9%EB%AC%B8%ED%98%95"
 )
+PURCHASE_REVIEW_LIST_URL = DEFAULT_LIST_URL.replace(
+    "%EC%A0%9C%EA%B3%B5%ED%98%95", "%EA%B5%AC%EB%A7%A4%ED%8F%89"
+)
+ZERO_PURCHASE_COST_RE = re.compile(
+    r"^실구매가[ \t]*\(자기부담금\)[ \t]*\n[ \t]*(?:\d+%↓[ \t]*)?0[ \t]*원[ \t]*$", re.M
+)
 DEFAULT_TYPES = "제공형"
 LIST_MARKER = "다른 체험단도 둘러볼까요"
 PROFILE_DIR = Path("stylec_profile")
@@ -383,7 +389,8 @@ def collect_campaigns(page, list_url, debug=False, max_pages=20):
         seen.add(url)
         campaigns.append({"url": url, "title": str(title or "")[:120], "image": pick_image(it),
                           "channels": item_channels(it), "category": str(it.get("ca_name") or ""),
-                          "type": str(it.get("wr_type_label") or it.get("wr_type") or "")})
+                          "type": str(it.get("wr_type_label") or it.get("wr_type") or ""),
+                          "out_of_pocket": it.get("it_user_charge")})
 
     if debug:
         print("\n[debug] JSON 응답 URL:")
@@ -608,8 +615,11 @@ def visit_restaurant_matches(title, category, body):
 def apply_one(page, camp, args):
     campaign_type = camp.get("type", "")
     visit = is_visit_type(campaign_type)
-    allowed_channels = DEFAULT_SNS.split(",") if visit else args.sns
-    if not visit and allowed_channels == DEFAULT_SNS.split(",") and DOG_CAMPAIGN_RE.search(camp.get("title", "")):
+    purchase_review = campaign_type == "구매평"
+    if purchase_review and not (type(camp.get("out_of_pocket")) is int and camp["out_of_pocket"] == 0):
+        return "skip:구매평 자기부담금 0원 아님"
+    allowed_channels = [] if purchase_review else DEFAULT_SNS.split(",") if visit else args.sns
+    if not (visit or purchase_review) and allowed_channels == DEFAULT_SNS.split(",") and DOG_CAMPAIGN_RE.search(camp.get("title", "")):
         allowed_channels = OTHER_PLATFORMS["인스타그램"]
     # 리뷰 채널 확인 ① 목록 데이터의 채널 정보와 제목
     channel_ok = not allowed_channels
@@ -639,7 +649,10 @@ def apply_one(page, camp, args):
         return "skip:키워드 필터"
 
     # 체험단 유형 확인 (상단 메뉴·하단 정보 글자는 빼고 본문에서만 확인)
-    if visit:
+    if purchase_review:
+        if not ZERO_PURCHASE_COST_RE.search(body):
+            return "skip:상세 화면에서 구매평 자기부담금 0원 미확인"
+    elif visit:
         if not visit_restaurant_matches(camp["title"], camp.get("category", ""), body):
             return "skip:허용 지역 맛집 방문형 아님"
     elif campaign_type and args.types:
@@ -816,6 +829,8 @@ def main():
             visits = collect_campaigns(page, VISIT_LIST_URL, debug=args.debug, max_pages=args.pages)
             by_url = {campaign["url"]: campaign for campaign in campaigns}
             by_url.update((campaign["url"], campaign) for campaign in visits if is_visit_type(campaign["type"]))
+            purchase_reviews = collect_campaigns(page, PURCHASE_REVIEW_LIST_URL, debug=args.debug, max_pages=args.pages)
+            by_url.update((campaign["url"], campaign) for campaign in purchase_reviews if campaign["type"] == "구매평")
             campaigns = list(by_url.values())
         print(f"[목록] 총 {len(campaigns)}개 수집")
 
