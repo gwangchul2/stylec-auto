@@ -21,6 +21,17 @@
    "manual": 0,
    "fail": 0,
    "skip": 0
+  },
+  {
+   "started_at": "2026-11-10 16:19:56",
+   "finished_at": "2026-11-10 18:00:41",
+   "status": "success",
+   "listed": 522,
+   "ok": 178,
+   "check": 12,
+   "manual": 0,
+   "fail": 0,
+   "skip": 331
   }
  ],
  "records": [
@@ -41,7 +52,1717 @@
    "url": "https://www.stylec.co.kr/trials/160042",
    "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793665278551.jpg",
    "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:21:18",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "보리차 진액☆직접 검색 구매(구매링크X) ☆",
+   "url": "https://www.stylec.co.kr/trials/161467",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793953323243.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:21:39",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "커버원 무선 휴대용 전기 온열 담요 온도조절 가정용 사무실용 캠핑용 전기 온열 찜질기",
+   "url": "https://www.stylec.co.kr/trials/161288",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793841621046.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:22:02",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡 구매평(와우회원)] 센토 인텐스 프리미엄 대용량 디퓨저 선물세트 일랑일랑 550ml*2개",
+   "url": "https://www.stylec.co.kr/trials/160509",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1761896551656.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:22:21",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[러브엘라] 퍼터치 소프트 니트 스웨터",
+   "url": "https://www.stylec.co.kr/trials/160021",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793607089864.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:22:43",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[로블루] 정수리냄새 삭제 샴푸 대용량 지성 떡짐케어 샴푸",
+   "url": "https://www.stylec.co.kr/trials/161237",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1789363532666.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:23:03",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[영진약품] 산삼 경옥골드 프리미엄",
+   "url": "https://www.stylec.co.kr/trials/158949",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1787887290872.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:23:26",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "라텍스 고밀도 메모리폼 매트리스 (110cm x 200cm)",
+   "url": "https://www.stylec.co.kr/trials/161145",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793323776882.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:23:47",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "먼지없는 소프릴 고급 호텔 수건 5개입",
+   "url": "https://www.stylec.co.kr/trials/161153",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1786085990670.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:24:06",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "창화당 모둠튀김",
+   "url": "https://www.stylec.co.kr/trials/160679",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1782361683771.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:24:27",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[어반코디] 페이드아웃 롱슬리브 티셔츠",
+   "url": "https://www.stylec.co.kr/trials/160045",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793667651209.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:24:46",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡 구매평(와우회원)] 센토 인텐스 프리미엄 대용량 디퓨저 선물세트 일랑일랑 550ml*2개",
+   "url": "https://www.stylec.co.kr/trials/160505",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1761896551656.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:25:06",
+   "status": "check",
+   "result": "ok?:제출함 (결과 문구 미확인 — MY체험단에서 확인)",
+   "title": "[로블루] 정수리냄새 삭제 샴푸 대용량 지성 떡짐케어 샴푸",
+   "url": "https://www.stylec.co.kr/trials/161244",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1789363532666.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:25:30",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[와우회원전용·100%환급] 말라코 해피데이 섬유향수 300ml 레이지 선데이 (정상가 38,400원 → 런칭할인 8,200원 · 조기품절·가격변동 임박)",
+   "url": "https://www.stylec.co.kr/trials/160715",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793848252524.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:25:53",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡 구매평(와우회원)] 센토 인텐스 프리미엄 대용량 디퓨저 선물세트 일랑일랑 550ml*2개",
+   "url": "https://www.stylec.co.kr/trials/160507",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1761896551656.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:26:14",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[러브엘라] 셔츠카라 배색 겨울 니트 스웨터",
+   "url": "https://www.stylec.co.kr/trials/160033",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793609922777.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:26:34",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡 구매평(와우회원)] 센토 인텐스 프리미엄 대용량 디퓨저 선물세트 일랑일랑 550ml*2개",
+   "url": "https://www.stylec.co.kr/trials/160506",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1761896551656.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:26:54",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "디럭스킨 하이드로겔 아이패치 다크서클 생기케어 쿠팡 리뷰 체험단",
+   "url": "https://www.stylec.co.kr/trials/160821",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793854175948.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:27:17",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "타리홈스 극세사 매트리스 커버 따뜻한 부드러운 침대커버 겨울",
+   "url": "https://www.stylec.co.kr/trials/161358",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793258208497.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:27:40",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[와우회원전용·100%환급] 말라코 해피데이 섬유향수 300ml 피그말리온 (정상가 38,400원 → 런칭할인 8,200원 · 조기품절·가격변동 임박)",
+   "url": "https://www.stylec.co.kr/trials/160780",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793853085186.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:28:00",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[와우회원전용·100%환급] 말라코 해피데이 섬유향수 300ml 윈터 레이크 던 (정상가 38,400원 → 런칭할인 8,200원 · 조기품절·가격변동 임박)",
+   "url": "https://www.stylec.co.kr/trials/160732",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793850950881.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:28:22",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "디럭스킨 하이드로겔 아이패치 수분케어 쿠팡 리뷰 체험단",
+   "url": "https://www.stylec.co.kr/trials/160817",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793841709096.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:28:41",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[와우회원전용·100%환급] 말라코 해피데이 섬유향수 300ml 클라우드 허깅 (정상가 38,400원 → 런칭할인 8,200원 · 조기품절·가격변동 임박)",
+   "url": "https://www.stylec.co.kr/trials/160754",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793851546689.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:29:01",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[와우회원전용·100%환급] 말라코 해피데이 섬유향수 300ml 아쿠아 마린 (정상가 38,400원 → 런칭할인 8,200원 · 조기품절·가격변동 임박)",
+   "url": "https://www.stylec.co.kr/trials/160719",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793848552213.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:29:22",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[와우회원전용·100%환급] 말라코 해피데이 섬유향수 300ml 오브 드 포레 (정상가 38,400원 → 런칭할인 8,200원 · 조기품절·가격변동 임박)",
+   "url": "https://www.stylec.co.kr/trials/160729",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793850747397.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:29:41",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[와우회원전용·100%환급] 말라코 해피데이 섬유향수 300ml 프렌치 라임 (정상가 38,400원 → 런칭할인 8,200원 · 조기품절·가격변동 임박)",
+   "url": "https://www.stylec.co.kr/trials/160776",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793851765755.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:30:03",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[어반코디] 패널 블록 오버핏 니트",
+   "url": "https://www.stylec.co.kr/trials/160046",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793666388447.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:30:26",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[그린핑거] 마이베이비 탑투토워시 워시(0~2세용)",
+   "url": "https://www.stylec.co.kr/trials/160417",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793767226370.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:30:48",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[스팜리뷰/검색미션] 마마포레스트 뽑아쓰는키친타올 200매 & 홀더 (화이트)",
+   "url": "https://www.stylec.co.kr/trials/162222",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1794193373112.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:31:10",
+   "status": "check",
+   "result": "ok?:제출함 (결과 문구 미확인 — MY체험단에서 확인)",
+   "title": "[2장 SET] 기모 코듀로이 골덴 밴딩 팬츠 B24P403",
+   "url": "https://www.stylec.co.kr/trials/162006",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1794190223161.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:31:33",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[약국입점] 프로벨 메디픽 구강세정기",
+   "url": "https://www.stylec.co.kr/trials/162081",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1790039886050.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:31:52",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[스팜리뷰/검색미션] 마마포레스트 뽑아쓰는키친타올 200매 & 홀더 (내추럴 그레이)",
+   "url": "https://www.stylec.co.kr/trials/162221",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1794193373112.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:32:14",
+   "status": "check",
+   "result": "ok?:제출함 (결과 문구 미확인 — MY체험단에서 확인)",
+   "title": "헤이팝씨 무설탕 무색소 캔디 비타민 과일 사탕 12가지 맛",
+   "url": "https://www.stylec.co.kr/trials/162101",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793254955629.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:32:37",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡 체험단] 당연구소 병아리콩간식 고단백 병아리콩칩 40g 10봉",
+   "url": "https://www.stylec.co.kr/trials/161980",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793845587466.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:32:51",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[스마트스토어] 도펠헤르츠 마칼디 마그네슘 칼슘 비타민D (20포)",
+   "url": "https://www.stylec.co.kr/trials/160334",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1765432175408.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:33:11",
+   "status": "check",
+   "result": "ok?:제출함 (결과 문구 미확인 — MY체험단에서 확인)",
+   "title": "크록스내피",
+   "url": "https://www.stylec.co.kr/trials/161679",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1794103507143.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:33:31",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[구매평/스마트스토어] 픽셀퓨어 슬로우에이징 랩핑 마스크팩 4매",
+   "url": "https://www.stylec.co.kr/trials/161576",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793602471330.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:33:53",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡 와우] 더티노프 헬로브리즈 퍼퓸 디퓨저 샤쉐, 딥 포레스트, 1개",
+   "url": "https://www.stylec.co.kr/trials/162243",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793603375610.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:34:23",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[와우회원전용·100%환급] 말라코 해피데이 섬유향수 300ml 쥬시 토마토 (정상가 38,400원 → 런칭할인 8,200원 · 조기품절·가격변동 임박)",
+   "url": "https://www.stylec.co.kr/trials/160743",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793851263505.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:34:44",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[스마트스토어] 도펠헤르츠 마그네슘400+비타민B1+B6+B12+엽산 (30정)",
+   "url": "https://www.stylec.co.kr/trials/160333",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1765429385415.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:35:07",
+   "status": "check",
+   "result": "ok?:제출함 (결과 문구 미확인 — MY체험단에서 확인)",
+   "title": "[쿠팡 와우] 더티노프 헬로브리즈 퍼퓸 디퓨저 샤쉐, 리치 우드, 1개",
+   "url": "https://www.stylec.co.kr/trials/162241",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793604054067.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:35:28",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[라이프엔라이크] 대용량 60L 원형 메쉬 통풍 세탁물 수납 빨래바구니 2종 세트",
+   "url": "https://www.stylec.co.kr/trials/162085",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1794199362636.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:35:48",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡]무니유유 울혼방 도툼 배색 스트링 커브 루즈핏 하이웨스트 밴딩 와이드 팬츠",
+   "url": "https://www.stylec.co.kr/trials/162228",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1794218145466.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:36:02",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[러브엘라] 메탈버튼 와플 베스트 니트 조끼",
+   "url": "https://www.stylec.co.kr/trials/160031",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793609031636.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:36:25",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡-판매자배송]국산 생강 벌꿀 생강청 525g 1병 (생강 약 1kg 착즙)",
+   "url": "https://www.stylec.co.kr/trials/162209",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1790754841079.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:36:46",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[구매평/자사몰] 픽셀퓨어 슬로우에이징 랩핑 마스크팩 4매",
+   "url": "https://www.stylec.co.kr/trials/161575",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793602471330.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:37:05",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[보고신약]비타씨부스터 _쿠팡 로켓배송",
+   "url": "https://www.stylec.co.kr/trials/162191",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1794209988538.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:37:28",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[올리브영/발표 당일 오전 11시 구매] 세레비 엘나스 60정 (2개월분)",
+   "url": "https://www.stylec.co.kr/trials/159756",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1774935209391.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:37:50",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡리뷰/검색미션 필수] 마마포레스트 클린오리진 디쉬바 설거지 비누 5개입",
+   "url": "https://www.stylec.co.kr/trials/162021",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1794192313995.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:38:11",
+   "status": "check",
+   "result": "ok?:제출함 (결과 문구 미확인 — MY체험단에서 확인)",
+   "title": "[쿠팡] 닥터디엣 리포좀 글루타치온 50X",
+   "url": "https://www.stylec.co.kr/trials/161457",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793852772980.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:38:39",
+   "status": "check",
+   "result": "ok?:제출함 (결과 문구 미확인 — MY체험단에서 확인)",
+   "title": "[에가톳] 운남성 고수 잎차 (홍차)",
+   "url": "https://www.stylec.co.kr/trials/161170",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793928382152.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:39:00",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "뉴트라비타 유기농 밀크씨슬 실리마린",
+   "url": "https://www.stylec.co.kr/trials/161485",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1791957335932.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:39:24",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡] 빅사이즈 도톰 기모 맨투맨 포켓 원피스",
+   "url": "https://www.stylec.co.kr/trials/162264",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1794231835451.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:39:43",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡리뷰(와우회원)] 그린레몬 초저분자 어린콜라겐 펩타이드",
+   "url": "https://www.stylec.co.kr/trials/161882",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1741855906362.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:40:03",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡] 트리트먼트 구매체험단",
+   "url": "https://www.stylec.co.kr/trials/161455",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1785834147242.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:40:26",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[구매평/스마트스토어] 픽셀퓨어 슬로우에이징 랩핑 마스크팩 4매",
+   "url": "https://www.stylec.co.kr/trials/161578",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793602471330.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:40:54",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡로켓] 쏘울피넛 100% 땅콩버터 스무스 500g",
+   "url": "https://www.stylec.co.kr/trials/159932",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1790129445918.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:41:14",
+   "status": "check",
+   "result": "ok?:제출함 (결과 문구 미확인 — MY체험단에서 확인)",
+   "title": "[르비르][쿠팡와우회원만] 별점,구매평,사진리뷰 / 르비르 탈모완화 상탈 샴푸, 1L",
+   "url": "https://www.stylec.co.kr/trials/162102",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1760349667944.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:41:36",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[네이버] 피타니 나드 플러스 로젠지",
+   "url": "https://www.stylec.co.kr/trials/161158",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793924380240.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:41:57",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[에가톳] 운남성 고수 잎차 (백차)",
+   "url": "https://www.stylec.co.kr/trials/161183",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793930128545.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:42:18",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[르비르][쿠팡와우회원만] 별점,구매평,사진리뷰 / 르비르 탈모완화 상탈 샴푸, 1L",
+   "url": "https://www.stylec.co.kr/trials/162103",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1760349667944.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:42:37",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[르비르][쿠팡와우회원만]별점,구매평,사진리뷰 / 르비르 LPP 프로틴 케어 효모 저자극 블랑쉬 트리트먼트, 1개, 1L",
+   "url": "https://www.stylec.co.kr/trials/162099",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1760349827066.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:42:57",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡] 빅사이즈 도톰 기모 브이넥 배색 롱 원피스",
+   "url": "https://www.stylec.co.kr/trials/162265",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1794231978935.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:43:18",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡와우회원전용/구매평] 리포좀 글루타치온 NFC레몬즙",
+   "url": "https://www.stylec.co.kr/trials/159435",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1767686111100.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:43:42",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[르비르][쿠팡와우회원만]별점,구매평,사진리뷰 / 르비르 LPP 프로틴 케어 효모 저자극 블랑쉬 트리트먼트, 1개, 1L",
+   "url": "https://www.stylec.co.kr/trials/162100",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1760349827066.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:44:03",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡와우회원 체험단] 당연구소 현미유 카사바칩, 40g, 3개",
+   "url": "https://www.stylec.co.kr/trials/160074",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1781837184201.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:44:24",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[로블루] 정수리 볼륨 구원템 뿌리볼륨 부스터 샴푸 300ml",
+   "url": "https://www.stylec.co.kr/trials/161984",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1789364994370.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:44:45",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡 구매평] 코 피지 흡착 루틴! 포어 리셋 마그네슘 듀얼 패치 신제품 1박스 5매",
+   "url": "https://www.stylec.co.kr/trials/162134",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793841929446.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:45:03",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[아미노코치] 블루레몬맛 수분보충 전해질 BCAA 에스세븐 스포츠음료 블루레몬, 7g, 14개",
+   "url": "https://www.stylec.co.kr/trials/162219",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1789045409353.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:45:25",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡 구매평] 젖산 마그네슘 분말 스틱 듀얼마그네슘 밸런스",
+   "url": "https://www.stylec.co.kr/trials/161521",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793961719434.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:45:47",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[구매평/자사몰] 픽셀퓨어 슬로우에이징 랩핑 마스크팩 4매",
+   "url": "https://www.stylec.co.kr/trials/161577",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793602471330.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:46:19",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "자석형 현관문 차프넬 방음판 방음재",
+   "url": "https://www.stylec.co.kr/trials/161148",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793324168706.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:46:38",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡로켓] 쏘울피넛 100% 땅콩버터 크런치 500g",
+   "url": "https://www.stylec.co.kr/trials/159939",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1790129354801.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:46:59",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡 구매평]  콜린 미오 이노시톨",
+   "url": "https://www.stylec.co.kr/trials/162018",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1794192142216.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:47:25",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡로켓] 쏘울피넛 100% 땅콩버터 크런치 500g",
+   "url": "https://www.stylec.co.kr/trials/159936",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1790129354801.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:47:47",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[스마트스토어] 도펠헤르츠 멀티비타민 A-Z 1박스 (30정)",
+   "url": "https://www.stylec.co.kr/trials/161964",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1765433444615.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:47:59",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡구매평] 눈가 피부의 빠른 개선 효과! 롤링볼 아이세럼 / 저자극 테스트 완료",
+   "url": "https://www.stylec.co.kr/trials/162029",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1778633595977.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:48:21",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡로켓] 쏘울피넛 100% 땅콩버터 스무스 500g",
+   "url": "https://www.stylec.co.kr/trials/159917",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1790129445918.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:48:42",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡로켓] 쏘울피넛 100% 땅콩버터 크런치 500g",
+   "url": "https://www.stylec.co.kr/trials/159938",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1790129354801.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:49:02",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡로켓] 쏘울피넛 100% 땅콩버터 스무스 500g",
+   "url": "https://www.stylec.co.kr/trials/159921",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1790129445918.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:49:24",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡로켓] 쏘울피넛 100% 땅콩버터 크런치 500g",
+   "url": "https://www.stylec.co.kr/trials/159937",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1790129354801.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:49:43",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "업셋 플리스 바라클라바 후드워머",
+   "url": "https://www.stylec.co.kr/trials/162001",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1794189679355.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:50:10",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡와우] 정리여왕 세면도구 파우치 3개세트",
+   "url": "https://www.stylec.co.kr/trials/162251",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1790000842592.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:50:33",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡로켓] 쏘울피넛 100% 땅콩버터 스무스 500g",
+   "url": "https://www.stylec.co.kr/trials/159934",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1790129445918.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:50:56",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[보고신약]올데이케어 저분자콜라겐 -쿠팡 판매자로켓 상품 -",
+   "url": "https://www.stylec.co.kr/trials/162156",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793157315286.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:51:17",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[스마트스토어] 도펠헤르츠 비타민C1000+아연+D3 (20포)",
+   "url": "https://www.stylec.co.kr/trials/161966",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1787183152893.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:51:29",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "신발주머니  ★PC구매 또는 모바일PC버전 직접 검색 구매★",
+   "url": "https://www.stylec.co.kr/trials/162105",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1794200957029.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:51:58",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[뉴트라비타] 코엔자임Q10 홍국 바나바",
+   "url": "https://www.stylec.co.kr/trials/161488",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1788327799500.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:52:19",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡와우회원전용/구매평] 알파CD 제로컷",
+   "url": "https://www.stylec.co.kr/trials/159434",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1763342179596.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:52:40",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡구매평] TXA 멜라 토닝 미스트_은은한 속광으로 피부가 환하게 빛나다!",
+   "url": "https://www.stylec.co.kr/trials/162028",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793238393315.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:53:09",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡] 닥터디엣 리포좀 글루타치온 50X",
+   "url": "https://www.stylec.co.kr/trials/161458",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793852772980.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:53:31",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[스마트스토어] 도펠헤르츠 이뮨플러스 아연+셀렌+비타민C+D+K (20포)",
+   "url": "https://www.stylec.co.kr/trials/161963",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1765432954388.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:53:53",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[뉴트라비타] 코엔자임Q10 홍국 바나바",
+   "url": "https://www.stylec.co.kr/trials/161487",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1788327799500.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:54:21",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[스마트스토어] 도펠헤르츠 아이젠-페민+엽산+C+B6 +B12 (20포)",
+   "url": "https://www.stylec.co.kr/trials/161965",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1787183006141.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:54:43",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡와우] 정리여왕 세면도구 파우치 3개세트",
+   "url": "https://www.stylec.co.kr/trials/162250",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1790000842592.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:55:05",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "커버원 반려동물 강아지 고양이 접이식 미용 목욕 거치대",
+   "url": "https://www.stylec.co.kr/trials/161293",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1792745155285.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:55:25",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[뉴트라비타] 코엔자임Q10 홍국 바나바",
+   "url": "https://www.stylec.co.kr/trials/161491",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1788327799500.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:55:47",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[뉴트라비타] 코엔자임Q10 홍국 바나바",
+   "url": "https://www.stylec.co.kr/trials/161502",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1788327799500.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:56:07",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡와우회원 체험단] 당연구소 현미유 카사바칩, 40g, 3개",
+   "url": "https://www.stylec.co.kr/trials/160076",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1781837184201.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:56:26",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[뉴트라비타] 코엔자임Q10 홍국 바나바",
+   "url": "https://www.stylec.co.kr/trials/161489",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1788327799500.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:56:46",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡와우] 정리여왕 세면도구 파우치 3개세트",
+   "url": "https://www.stylec.co.kr/trials/162248",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1790000842592.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:57:05",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡와우] 정리여왕 세면도구 파우치 3개세트",
+   "url": "https://www.stylec.co.kr/trials/162249",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1790000842592.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:57:35",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "남성 골프신발주머니  ★PC구매 또는 모바일PC버전 직접 검색 구매★",
+   "url": "https://www.stylec.co.kr/trials/162106",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1794200957029.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:57:58",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡 구매평] 젖산 마그네슘 분말 스틱 듀얼마그네슘 밸런스",
+   "url": "https://www.stylec.co.kr/trials/161527",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793961719434.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:58:17",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "닥터포지션 언더웨어 성인기저귀 팬티 중형",
+   "url": "https://www.stylec.co.kr/trials/160009",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793679943360.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:58:44",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡 와우회원 구매평] 바인그로우 엑소샷 두피 탈모 앰플 120ML 1개입",
+   "url": "https://www.stylec.co.kr/trials/158200",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1776390173724.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:59:12",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[신코스랩] 쿠팡 구매평/깊은 바다의 수분 에너지를 담은 콰트로 마린 딥씨 크림 *PDRN 마린콜라겐 씨위드콤플렉스 스피룰리나 4중 시너지*",
+   "url": "https://www.stylec.co.kr/trials/162166",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1781100867374.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:59:32",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "★체험단 미션 필수★ [쿠팡구매후기/사진필수] 톰과제리 빈티지 포스터 아크릴 마그네틱 스마트톡 (맥세이프 호환)",
+   "url": "https://www.stylec.co.kr/trials/162067",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793860891214.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 16:59:52",
+   "status": "check",
+   "result": "ok?:제출함 (결과 문구 미확인 — MY체험단에서 확인)",
+   "title": "[쿠팡와우회원전용/구매평] 포스파티딜세린 두뇌엔 PS플러스",
+   "url": "https://www.stylec.co.kr/trials/159437",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1775436333389.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:00:27",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[스마트스토어] 간 케어템, 강한방 간의신",
+   "url": "https://www.stylec.co.kr/trials/162125",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1788852613755.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:00:48",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[신코스랩] 쿠팡 구매평/깊은 바다의 수분 에너지를 담은 콰트로 마린 딥씨 앰플 *PDRN 마린콜라겐 씨위드콤플렉스 스피룰리나 4중 시너지*",
+   "url": "https://www.stylec.co.kr/trials/162169",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1781074673890.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:01:08",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[컨트리세이브]360도 칫솔 유아칫솔 아기칫솔 3개월 아기부터 사용 2P세트",
+   "url": "https://www.stylec.co.kr/trials/161972",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1779947151230.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:01:30",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡 첫구매·재구매 리뷰단 모집] 일양약품 인지케어PS300 포스파티딜세린 300mg",
+   "url": "https://www.stylec.co.kr/trials/160153",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1792640788641.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:01:58",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡 와우] 데일리 간 케어, 강한방 간의신",
+   "url": "https://www.stylec.co.kr/trials/162120",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1788852613755.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:02:20",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "★체험단 미션 필수★ [쿠팡구매후기/사진필수] 톰과제리 빈티지 포스터 아크릴 투명 마그네틱 스마트톡 (맥세이프 호환)",
+   "url": "https://www.stylec.co.kr/trials/162069",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793861040890.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:02:48",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "(쿠팡 구매평) 마케즈 헤어 마사지 빗 앰플 두피 브러쉬 (1개)",
+   "url": "https://www.stylec.co.kr/trials/162090",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1794199824846.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:03:10",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[라이프엔라이크] 여행용 기내 목지지 휴대용 쿠션 목베개 2P 세트",
+   "url": "https://www.stylec.co.kr/trials/162086",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1794199538495.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:03:21",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "타리홈스 수도꼭지 동파방지 커버 수도관 보온재",
+   "url": "https://www.stylec.co.kr/trials/161348",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793943758509.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:03:53",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "★체험단 미션 필수/기종확인★[쿠팡구매후기/사진필수] 톰과제리 빈티지 포스터 유니프레임 블랙 마그네틱 케이스 (맥세이프 호환)",
+   "url": "https://www.stylec.co.kr/trials/162058",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793859678024.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:04:15",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "★체험단 미션 필수★ [쿠팡구매후기/사진필수] 톰과제리 빈티지 포스터 에폭시 투명 마그네틱 멀티 스탠드 카드지갑 (맥세이프 호환)",
+   "url": "https://www.stylec.co.kr/trials/162057",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793859510623.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:04:49",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡 첫구매·재구매 리뷰단 모집] 일양약품 인지케어PS300 포스파티딜세린 300mg",
+   "url": "https://www.stylec.co.kr/trials/161079",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1792640788641.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:05:08",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "(쿠팡)BK24/7 매끄난발 매끄난플러스 고보습 풋크림 각질크림 라벤더머스크향 80ml",
+   "url": "https://www.stylec.co.kr/trials/159418",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793580216986.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:05:38",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "★체험단 미션 필수/기종확인★[쿠팡구매후기/사진필수] 톰과제리 빈티지 포스터 투카드 마그네틱 범퍼 케이스 (맥세이프 호환)",
+   "url": "https://www.stylec.co.kr/trials/162066",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793860845131.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:06:19",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "★체험단 미션 필수/기종확인!!!★[쿠팡구매후기/사진필수] 산리오 스위티 박스 투카드 마그네틱 범퍼 케이스 (맥세이프 호환)",
+   "url": "https://www.stylec.co.kr/trials/162027",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793859146623.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:06:40",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "컬러가 예쁜 특별한 소재 리퀴드 매트 갤럭시 맥세이프 실리콘 케이스  체험단 모집",
+   "url": "https://www.stylec.co.kr/trials/162212",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1766037880732.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:07:02",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[네이버 구매평] 미니마이저 브라 큰컵 가슴작아지는 브라 작아보이는 큰가슴 보정 속옷",
+   "url": "https://www.stylec.co.kr/trials/162014",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793673720632.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:07:14",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "커버원 강아지 양치 보조기 덴탈토이 구강관리 치아관리 이갈이 장난감 손가락 칫솔 포함",
+   "url": "https://www.stylec.co.kr/trials/161314",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793941515262.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:07:51",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "타리홈스 수도꼭지 동파방지 커버 수도관 보온재",
+   "url": "https://www.stylec.co.kr/trials/161349",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793943758509.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:08:11",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "★체험단 미션 필수/기종확인★[쿠팡구매후기/사진필수] 톰과제리 빈티지 포스터 유니프레임 크리스탈 마그네틱 케이스 (맥세이프 호환)",
+   "url": "https://www.stylec.co.kr/trials/162062",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793860386627.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:08:32",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[지그재그 구매평] 어깨끈 탈부착 가능 여행필수탬 빅사이즈 미니마이저 브라",
+   "url": "https://www.stylec.co.kr/trials/162130",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793673720632.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:08:54",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "타리홈스 수도꼭지 동파방지 커버 수도관 보온재",
+   "url": "https://www.stylec.co.kr/trials/161350",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793943758509.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:09:15",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "붙이는 방음재 템바보드 30 x 60cm 6개",
+   "url": "https://www.stylec.co.kr/trials/161146",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1792032958655.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:09:36",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[네이버멤버쉽Only]강아지 고양이 뿌리는 구강청결제 큐라벳 하이덴트",
+   "url": "https://www.stylec.co.kr/trials/160121",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1792790997733.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:09:59",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "(쿠팡) 이롭핏 크레아틴 모노하이드레이트",
+   "url": "https://www.stylec.co.kr/trials/161977",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1792985531431.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:10:20",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "인테리어 템바보드 60cm x 3m",
+   "url": "https://www.stylec.co.kr/trials/161140",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1777952067718.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:10:41",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[에이블 구매평] 어깨끈 탈부착가능 미니마이저 브라 여행 꿀탬",
+   "url": "https://www.stylec.co.kr/trials/162127",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793673720632.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:11:07",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "국내 첫 론칭 소프트 실리콘 MagGrip 맥세이프 스마트톡 체험단 모집",
+   "url": "https://www.stylec.co.kr/trials/162210",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1767345938571.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:11:33",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡 첫구매·재구매 리뷰단 모집] 일양약품 인지케어PS300 포스파티딜세린 300mg",
+   "url": "https://www.stylec.co.kr/trials/161580",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1792640788641.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:11:54",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡구매평] GIK 아웃도어 스마일 쿨링 골프 썬패치 1회분",
+   "url": "https://www.stylec.co.kr/trials/161581",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1794017943950.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:12:16",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "커버원 강아지 양치 보조기 덴탈토이 구강관리 치아관리 이갈이 장난감 손가락 칫솔 포함",
+   "url": "https://www.stylec.co.kr/trials/161315",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793941515262.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:12:43",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "대리석 시트지 60cm x 3m",
+   "url": "https://www.stylec.co.kr/trials/161142",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1777952361832.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:13:14",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "n-1 힌지보호 2배자력 맥세이프 케이스 폴드8울트라 폴드8와이드 폴드7/6",
+   "url": "https://www.stylec.co.kr/trials/160019",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1773394002014.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:13:37",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "The Bombshell 더 밤쉘 코코 팟 바이브레이터",
+   "url": "https://www.stylec.co.kr/trials/161036",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1784183192428.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:13:59",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "Brr 몰리 바이브레이터 흡입 클리 니플 여성 진동 자위 10단계 강도 저소음_(블랙 주문)",
+   "url": "https://www.stylec.co.kr/trials/161035",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1752800980874.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:14:45",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "C-1 [클레뷰] 위빙가죽케이스 갤럭시S26울트라 25울트라",
+   "url": "https://www.stylec.co.kr/trials/160022",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1774835118494.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:15:05",
+   "status": "check",
+   "result": "ok?:제출함 (결과 문구 미확인 — MY체험단에서 확인)",
+   "title": "c-1 힌지보호 2배자력 맥세이프 케이스 폴드8울트라 폴드8와이드 폴드7/6",
+   "url": "https://www.stylec.co.kr/trials/160025",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1773394002014.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:15:25",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡 로켓] 아이폰  갤럭시 전 시리즈 콤보 맥세이프 케이스 (체험단모집)",
+   "url": "https://www.stylec.co.kr/trials/161452",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1792384832460.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:15:45",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡구매평] GIK 와이드 컨피던스 골프 썬패치 12g",
+   "url": "https://www.stylec.co.kr/trials/161246",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793931700523.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:16:18",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "프린팅 템바보드 60cm x 3m",
+   "url": "https://www.stylec.co.kr/trials/161141",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1782276974602.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:16:45",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡 로켓] 아이폰 360도 프라이버시 필름 !! 기종확인 필수 !!  (체험단모집)",
+   "url": "https://www.stylec.co.kr/trials/161447",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1780031670167.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:17:12",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡] 루이본 꾸안꾸 피치 쌍테 132P 핑크",
+   "url": "https://www.stylec.co.kr/trials/162179",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793931375688.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:17:34",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "빨간망토 차차   Free(44~66), 2XL(77~99) 사이즈 모집",
+   "url": "https://www.stylec.co.kr/trials/162291",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1789309125223.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:18:03",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "Brr 슬리키 바이브레이터 여성 진동 자위 12단계 저소음",
+   "url": "https://www.stylec.co.kr/trials/161023",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1752800980874.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:18:23",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "c [클레뷰] 위빙가죽케이스 갤럭시Z폴드8 폴드8울트라 폴드7/6",
+   "url": "https://www.stylec.co.kr/trials/160023",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1785391773340.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:18:44",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "붙이는 벽지 60cm x 10m",
+   "url": "https://www.stylec.co.kr/trials/161143",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1784264698021.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:19:21",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡] 루이본 매직 슬림핏 초나노 양면 쌍꺼풀테이프 1.2mm, 1개, 투명",
+   "url": "https://www.stylec.co.kr/trials/162177",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1779774990864.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:20:07",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "★체험단 미션 필수★기종확인!!![쿠팡구매후기/사진필수] 팝몬스터즈 레트로 에어팟 시리즈 클리어 케이스 +아크릴키링",
+   "url": "https://www.stylec.co.kr/trials/162053",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1794197217910.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:20:41",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡 로켓]  아이폰 매트 프라이버시 풀커버  보호 필름 !! 기종확인 필수 !!  지문방지  프라이버시 매트 프라이버 세라믹 보호 필름 (체험단모집)",
+   "url": "https://www.stylec.co.kr/trials/161440",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1763980718096.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:21:15",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[스토어] 아쿠아밸런스 블루 강아지 수분보충제 * 1개",
+   "url": "https://www.stylec.co.kr/trials/160442",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1787724436456.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:21:37",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡와우회원]강아지 고양이 칫솔 큐라벳 하이덴트 9.0 스탠다드",
+   "url": "https://www.stylec.co.kr/trials/161289",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1792790238793.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:22:03",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡 로켓]  아이폰 4in1  매트, 블루라이트, 프라이버시, 자번사 풀커버  보호 필름 !! 기종확인 필수 !! (체험단모집)",
+   "url": "https://www.stylec.co.kr/trials/161444",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1763980810032.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:22:23",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "어조아 SM 플레이 목줄 성인용품 구속 도구",
+   "url": "https://www.stylec.co.kr/trials/161494",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793954844413.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:22:46",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "볼륨 속치마 블랙 패티코트 기장 50cm Free 사이즈 체험단 모집 합니다. (쿠팡 로켓)",
+   "url": "https://www.stylec.co.kr/trials/162296",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1791457796733.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:23:28",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "주토피아 주디 코스프레  2XL 사이즈 모집 신속한 리뷰 부탁 드립니다.",
+   "url": "https://www.stylec.co.kr/trials/162286",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1791381151014.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:23:50",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "Brr 로사벨라 바이브레이터 삽입 클리 니플 여성 진동 자위 10단계 강도 저소음",
+   "url": "https://www.stylec.co.kr/trials/161208",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1752800980874.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:24:10",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡 로켓]  아이폰 매트 풀커버  보호 필름 !! 기종확인 필수 !!  지문방지 매트 세라믹 보호 필름 (체험단모집)",
+   "url": "https://www.stylec.co.kr/trials/161438",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1763980617083.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:24:31",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡 로켓] 아이폰 시리즈 카메라 강화유리 보호 필름 (체험단모집)",
+   "url": "https://www.stylec.co.kr/trials/161450",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1737002648591.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:25:11",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "★체험단 미션 필수/Z폴드 7,8시리즈★기종확인!![쿠팡구매후기/사진필수] 톰과제리 빈티지 포스터 유니프레임 블랙 마그네틱 Z폴드 케이스 (맥세이프 호환)",
+   "url": "https://www.stylec.co.kr/trials/162061",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793860219218.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:25:46",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "★체험단 미션 필수/Z플립 기종확인!!!★[쿠팡구매후기/사진필수] 산리오 스위티 박스 유니프레임 크리스탈 마그네틱 Z플립 케이스 (맥세이프 호환)",
+   "url": "https://www.stylec.co.kr/trials/162026",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793859100973.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:26:08",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "★체험단 미션 필수★기종확인!!![쿠팡구매후기/사진필수] 팝몬스터즈 레트로 에어팟 시리즈 하드 케이스 +아크릴키링",
+   "url": "https://www.stylec.co.kr/trials/162054",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1794197539564.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:26:31",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "Brr 츄츄 바이브레이터 흡입 클리 니플 여성 진동 자위 7단계 저소음",
+   "url": "https://www.stylec.co.kr/trials/161203",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1752800980874.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:26:51",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "내셔널 리코리아 크리스탈 클리어 애플펜슬 충전 수납 아이패드 케이스 체험단 모집",
+   "url": "https://www.stylec.co.kr/trials/160958",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1754554825577.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:27:19",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "Brr 투명 에어크래프트 투명 오나홀 돌기 명기 자위기구 쾌감 훈련 흡입력 성인용품_(블루 주문)",
+   "url": "https://www.stylec.co.kr/trials/161021",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1752800980874.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:27:46",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "★체험단 미션 필수/Z플립 시리즈★기종확인!![쿠팡구매후기/사진필수] 톰과제리 빈티지 포스터 유니프레임 블랙 마그네틱 Z플립 케이스 (맥세이프 호환)",
+   "url": "https://www.stylec.co.kr/trials/162059",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793860010411.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:28:07",
+   "status": "check",
+   "result": "ok?:제출함 (결과 문구 미확인 — MY체험단에서 확인)",
+   "title": "[쿠팡 로켓] 아이폰 사생활 보호 필름 !! 기종확인 필수 !!  프라이버시 사생활 보호 필름 (체험단모집)",
+   "url": "https://www.stylec.co.kr/trials/162108",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1759317917560.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:28:35",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "내서널 리코리아 세로거치 슬라이딩 아이패드 케이스 체험단 모집",
+   "url": "https://www.stylec.co.kr/trials/162205",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1753406600311.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:28:55",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "★체험단 미션 필수/Z플립 기종확인★[쿠팡구매후기/사진필수] 톰과제리 빈티지 포스터 유니프레임 크리스탈 마그네틱 Z플립 케이스 (맥세이프 호환)",
+   "url": "https://www.stylec.co.kr/trials/162065",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793860709166.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:29:23",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡 로켓] 갤럭시 매트 프라이버시 풀커버 보호 필름 !! 기종확인 필수 !!  매트한 저반사 프라이버시 세라믹 보호 필름 (체험단모집)",
+   "url": "https://www.stylec.co.kr/trials/161433",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1763549126952.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:30:13",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "★체험단 미션 필수★기종확인!!![쿠팡구매후기/사진필수] 팝몬스터즈 레트로 버즈 시리즈 클리어 케이스 +아크릴키링",
+   "url": "https://www.stylec.co.kr/trials/162047",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1794197026056.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:30:41",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "★체험단 미션 필수/폴드 7,8 시리즈★기종확인!![쿠팡구매후기/사진필수] 톰과제리 빈티지 포스터 유니프레임 크리스탈 마그네틱 Z폴드 케이스 (맥세이프 호환)",
+   "url": "https://www.stylec.co.kr/trials/162063",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793860492283.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:32:08",
+   "status": "check",
+   "result": "ok?:제출함 (결과 문구 미확인 — MY체험단에서 확인)",
+   "title": "★체험단 미션 필수/폴드 7,8 시리즈★기종확인!![쿠팡구매후기/사진필수] 산리오 스위티 박스 유니프레임 크리스탈 마그네틱 Z폴드 케이스 (맥세이프 호환)",
+   "url": "https://www.stylec.co.kr/trials/162024",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793858973315.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:32:29",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "★체험단 미션 필수★기종확인!!![쿠팡구매후기/사진필수] 팝몬스터즈 레트로 버즈 시리즈 하드 케이스 +아크릴키링",
+   "url": "https://www.stylec.co.kr/trials/162048",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1794197577597.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:32:53",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "귀멸의칼날 쿄쥬로  코스튬 S~L 사이즈 체험단 모집 <상세설명 필독~!>",
+   "url": "https://www.stylec.co.kr/trials/162294",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1775285989200.png",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:33:12",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "★체험단 미션 필수/Z플립 7,8만★기종확인!!![쿠팡구매후기/사진필수] 톰과제리 빈티지 포스터 Z플립 오토 힌지 마그네틱 카드도어범퍼 케이스 (맥세이프 호환)",
+   "url": "https://www.stylec.co.kr/trials/162056",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793859293806.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:33:31",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡 로켓] 갤럭시 매트 지문방지 사생활 보호 필름 !! 기종확인 필수 !! 매트 프라이버시 사생활 보호 필름 (체험단모집)",
+   "url": "https://www.stylec.co.kr/trials/162110",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1759317738084.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:34:34",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡 로켓] 갤럭시 지문방지 매트 풀커버 보호 필름 !! 기종확인 필수 !! 지문방지 매트 보호 필름 (체험단모집)",
+   "url": "https://www.stylec.co.kr/trials/162112",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1759203330279.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:35:02",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡 로켓] 갤럭시 매트 풀커버 보호 필름 !! 기종확인 필수 !!  매트한 저반사 세라믹 보호 필름 (체험단모집)",
+   "url": "https://www.stylec.co.kr/trials/161434",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1763549065488.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:36:05",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[쿠팡 로켓] 갤럭시 사생활 보호 필름 !! 기종확인 필수 !! 유광 프라이버시 사생활 보호 필름 (체험단모집)",
+   "url": "https://www.stylec.co.kr/trials/162111",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1759202936680.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:40:34",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "Brr 플로라 롱 스타킹 섹시 러블리 꽃무늬 pantyhose stockings_(블랙 주문)",
+   "url": "https://www.stylec.co.kr/trials/161206",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1752800980874.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:50:02",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "Brr 멀티 슬리브 5단 분리 콕링 발기 사정 정액 잠금 두께 bondage sm play set cock ring penis sleeve_(블랙 주문)",
+   "url": "https://www.stylec.co.kr/trials/161213",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1752800980874.jpg",
+   "img_checked": true
+  },
+  {
+   "at": "2026-11-10 17:51:38",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "남자 반팔 메이드복 S~2XL 사이즈 모집",
+   "url": "https://www.stylec.co.kr/trials/162298",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1743678437952.png",
+   "img_checked": true
   }
  ],
- "updated_at": "2026-11-10 16:15:06"
+ "updated_at": "2026-11-10 18:00:41"
 }
