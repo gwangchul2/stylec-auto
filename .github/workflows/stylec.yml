@@ -28,7 +28,11 @@ jobs:
       # 신청서 빈칸에 들어갈 문구 — 원하는 대로 수정하세요
       APPLY_MESSAGE: "제품에 관심이 많아 꼼꼼하고 정성스럽게 리뷰 작성하겠습니다."
       # 제외할 키워드(쉼표 구분). 예: "인스타,릴스,유튜브"
-      EXCLUDE: ""
+      EXCLUDE: "키즈"
+      MAX_APPLICATIONS: ${{ github.event_name == 'workflow_dispatch' && '1' || '999' }}
+
+    outputs:
+      report: ${{ steps.report.outputs.report }}
 
     steps:
       - uses: actions/checkout@v4
@@ -63,7 +67,7 @@ jobs:
           bash .github/scripts/live-push.sh "$LIVE" stylec loop &
           LIVE_PID=$!
           python stylec_auto.py \
-            --apply --max 999 --headless \
+            --apply --max "$MAX_APPLICATIONS" --headless \
             --storage-state session.json \
             --history docs/data/history.json \
             --live "$LIVE" \
@@ -73,6 +77,11 @@ jobs:
           kill "$LIVE_PID" 2>/dev/null
           bash .github/scripts/live-push.sh "$LIVE" stylec once
           exit $CODE
+
+      - name: Prepare KakaoTalk report
+        id: report
+        if: always()
+        run: python .github/scripts/send-kakao.py --report docs/data/history.json
 
       - name: 로그인 상태 파일 삭제
         if: always()
@@ -96,6 +105,9 @@ jobs:
     name: 무신사
     runs-on: ubuntu-latest
     timeout-minutes: 120
+
+    outputs:
+      report: ${{ steps.report.outputs.report }}
 
     steps:
       - uses: actions/checkout@v4
@@ -128,13 +140,15 @@ jobs:
 
       - name: 체험단 신청
         if: steps.session.outputs.ok == 'true'
+        env:
+          CANDIDATE_LIMIT: ${{ github.event_name == 'workflow_dispatch' && '1' || '0' }}
         run: |
           set +e
           LIVE="$RUNNER_TEMP/live.json"
           # 진행 상황을 15초마다 live-musinsa 브랜치에 올려 대시보드에 실시간 표시
           bash .github/scripts/live-push.sh "$LIVE" musinsa loop &
           LIVE_PID=$!
-          python musinsa_preuser.py \
+          python musinsa_preuser.py --limit "$CANDIDATE_LIMIT" \
             --headless \
             --storage-state session.json \
             --history docs/data/musinsa.json \
@@ -143,6 +157,11 @@ jobs:
           kill "$LIVE_PID" 2>/dev/null
           bash .github/scripts/live-push.sh "$LIVE" musinsa once
           exit $CODE
+
+      - name: Prepare KakaoTalk report
+        id: report
+        if: always()
+        run: python .github/scripts/send-kakao.py --report docs/data/musinsa.json
 
       - name: 로그인 상태 파일 삭제
         if: always()
@@ -181,3 +200,22 @@ jobs:
           path: docs
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  notify:
+    needs: [stylec, musinsa, deploy]
+    if: always() && !cancelled()
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Send KakaoTalk result
+        env:
+          KAKAO_REST_API_KEY: ${{ secrets.KAKAO_REST_API_KEY }}
+          KAKAO_CLIENT_SECRET: ${{ secrets.KAKAO_CLIENT_SECRET }}
+          KAKAO_REFRESH_TOKEN: ${{ secrets.KAKAO_REFRESH_TOKEN }}
+          STYLEC_REPORT: ${{ needs.stylec.outputs.report }}
+          MUSINSA_REPORT: ${{ needs.musinsa.outputs.report }}
+          STYLEC_RESULT: ${{ needs.stylec.result }}
+          MUSINSA_RESULT: ${{ needs.musinsa.result }}
+        run: python .github/scripts/send-kakao.py --notify

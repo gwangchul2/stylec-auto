@@ -43,11 +43,10 @@ from playwright.sync_api import sync_playwright
 # ============================================================
 
 # 체험단 목록 필터 (gf=M 페이지 = 남성 + 공용)
-GENDERS = ["M", "A"]
+GENDERS = ["M", "F", "A"]
 
-# 옷 사이즈: 남아있는 사이즈 중 가장 큰 것을 고릅니다 (XL > L > M ..., 110 > 105 > 100 ...)
-# 신발 사이즈(mm): 정확히 없으면 가장 가까운 사이즈
-SHOE_SIZE = 280
+# 옷은 XL만, 신발은 아래 사이즈만 신청합니다.
+SHOE_SIZES = {250, 270}
 # 반지 호수: 정확히 없으면 가장 가까운 호수
 RING_SIZE = 21
 
@@ -55,7 +54,7 @@ RING_SIZE = 21
 PREFERRED_OPTIONS = ["블랙", "BLACK", "네이비", "NAVY"]
 
 # 이름에 이 단어가 들어간 체험단은 건너뜀 (예: ["키즈", "[샘플]"]). 비워두면 전부 신청
-EXCLUDE_KEYWORDS = []
+EXCLUDE_KEYWORDS = ["키즈"]
 
 # 체험단 사이 대기 시간(초)
 DELAY_RANGE = (2, 4)
@@ -326,7 +325,7 @@ def fetch_events(ctx):
 # ------------------------------------------------------------
 LETTER_RANK = {"XXS": 0, "XS": 1, "S": 2, "M": 3, "L": 4, "XL": 5, "XXL": 6, "2XL": 6,
                "XXXL": 7, "3XL": 7, "4XL": 8, "5XL": 9}
-LETTER_RE = re.compile(r"(?<![A-Z0-9])(XXS|XS|S|M|L|XL|XXL|XXXL|[2-5]XL)(?![A-Z])", re.I)
+LETTER_RE = re.compile(r"(?<![A-Z0-9])(XXS|XS|S|M|L|XL|XXL|XXXL|[2-5]XL)(?![A-Z0-9])", re.I)
 NUM_RE = re.compile(r"(?<![\d.])(\d{1,3}(?:\.\d)?)(?![\d.])")
 
 
@@ -366,17 +365,17 @@ def pick_option(texts):
     # 신발 (예: 250, 280, 285)
     shoe = [(u, v) for u, v in zip(usable, nums) if v is not None and 200 <= v <= 320]
     if shoe and len(shoe) >= len(first) / 2:
-        return _nearest([p[0] for p in shoe], [p[1] for p in shoe], SHOE_SIZE)
+        return next((label for label, size in shoe if size in SHOE_SIZES), None)
 
-    # 옷 - 알파벳 사이즈 (S/M/L/XL...) : 가장 큰 것
+    # 옷은 XL로 명시된 옵션만 허용
     lett = [(u, v) for u, v in zip(usable, letters) if v is not None]
     if lett and len(lett) >= len(first) / 2:
-        return max(lett, key=lambda p: p[1])[0]
+        return next((label for label, rank in lett if rank == LETTER_RANK["XL"]), None)
 
-    # 옷 - 숫자 사이즈 (90/95/100, 28/30/32, 1/2/3 ...) : 가장 큰 것
+    # 숫자만 있는 옷 옵션은 XL로 확인할 수 없음
     short = [(u, v) for u, v, f in zip(usable, nums, first) if v is not None and len(f) <= 12]
     if short and len(short) >= len(first) / 2:
-        return max(short, key=lambda p: p[1])[0]
+        return None
 
     # 색상/상품 선택
     for pref in PREFERRED_OPTIONS:
@@ -655,10 +654,11 @@ def main():
         done_urls = {r["url"] for r in hist["records"] if r.get("status") in ("ok", "check")}
         before = len(events)
         events = [e for e in events if EVENT_URL.format(id=e["id"]) not in done_urls]
+        already_count = before - len(events)
         if args.limit:
             events = events[: args.limit]
         run["listed"] = before
-        log(f"신청 대상 체험단 {len(events)}개 (모집 중 {before}개, 이미 신청 {before - len(events)}개 제외)")
+        log(f"신청 대상 체험단 {len(events)}개 (모집 중 {before}개, 이미 신청 {already_count}개 제외)")
 
         live["total"] = len(events)
         write_live(live_path, live)

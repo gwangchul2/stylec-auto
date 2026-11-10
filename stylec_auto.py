@@ -37,6 +37,9 @@ DEFAULT_LIST_URL = (
     "&campaignType=%EC%A0%9C%EA%B3%B5%ED%98%95"
     "&category=&region=&sns=&include_finish=false"
 )
+VISIT_LIST_URL = DEFAULT_LIST_URL.replace(
+    "%EC%A0%9C%EA%B3%B5%ED%98%95", "%EB%B0%A9%EB%AC%B8%ED%98%95"
+)
 DEFAULT_TYPES = "제공형"
 LIST_MARKER = "다른 체험단도 둘러볼까요"
 PROFILE_DIR = Path("stylec_profile")
@@ -64,6 +67,14 @@ OTHER_PLATFORMS = {
     "스레드": ["스레드", "threads"],
     "페이스북": ["페이스북", "facebook"],
 }
+RESTAURANT_RE = re.compile(r"맛집|음식점|식당|레스토랑|브런치|카페|고깃집|횟집|베이커리|외식|식사|국밥|뷔페|닭발|한정식|초밥")
+VISIT_AREA_RE = re.compile(
+    r"^(?:(?:인천(?:광역시)?\s*(?:서구\s*)?)?검단|"
+    r"(?:서울(?:특별시)?\s*(?:(?:강서구|마포구|서대문구)\s*)?)?(?:마곡|홍대|신촌))"
+    r"(?:입구역|역|신도시|동|지구|로|중앙로)?(?:\s|$)"
+)
+VISIT_ADDRESS_RE = re.compile(r"^\s*(?:방문\s*주소|매장\s*주소|업체\s*주소)\s*[:：]?\s*([^\r\n]+)", re.M)
+DOG_CAMPAIGN_RE = re.compile(r"강아지|반려견|애견|댕댕이|견주|펫푸드|펫용품")
 CHANNEL_KEY_RE = re.compile(r"sns|channel|media|platform|reels|insta|review_?type", re.I)
 
 APPLY_BTN_TEXTS = ["체험단 신청하기", "신청하기", "캠페인 신청", "지원하기"]
@@ -371,7 +382,8 @@ def collect_campaigns(page, list_url, debug=False, max_pages=20):
             continue
         seen.add(url)
         campaigns.append({"url": url, "title": str(title or "")[:120], "image": pick_image(it),
-                          "channels": item_channels(it)})
+                          "channels": item_channels(it), "category": str(it.get("ca_name") or ""),
+                          "type": str(it.get("wr_type_label") or it.get("wr_type") or "")})
 
     if debug:
         print("\n[debug] JSON 응답 URL:")
@@ -492,9 +504,11 @@ def fill_form(page, message, allow=()):
         except Exception:
             pass
     for rs in groups.values():
-        if not any(r.is_checked() for r in rs):
-            # 채널 선택이면 블로그를 고름 (블로그가 없으면 다른 플랫폼이 아닌 첫 항목)
-            choice = rs[_prefer([_option_label(r) for r in rs], allow)]
+        labels = [_option_label(r) for r in rs]
+        preferred = _prefer(labels, allow)
+        has_channel = any(word.lower() in labels[preferred].lower() for word in allow)
+        if has_channel or not any(r.is_checked() for r in rs):
+            choice = rs[preferred]
             try:
                 choice.check(force=True)
             except Exception:
@@ -505,12 +519,14 @@ def fill_form(page, message, allow=()):
     for i in range(sels.count()):
         s = sels.nth(i)
         try:
-            if s.is_visible() and not s.input_value():
+            if s.is_visible():
                 opts = s.locator("option").all()
                 vals = [(o.get_attribute("value"), (o.inner_text() or "") + " " + o.get_attribute("value"))
                         for o in opts if o.get_attribute("value")]
                 if vals:
-                    s.select_option(vals[_prefer([t for _, t in vals], allow)][0])
+                    value, label = vals[_prefer([t for _, t in vals], allow)]
+                    if not s.input_value() or any(word.lower() in label.lower() for word in allow):
+                        s.select_option(value)
         except Exception:
             pass
 
@@ -573,15 +589,36 @@ def backfill_images(page, hist, path, limit=80):
     print(f"[썸네일] {found}개 채움")
 
 
+def is_visit_type(campaign_type):
+    return any(kind.strip() in ("방문", "방문형") for kind in campaign_type.split("+"))
+
+
+def visit_restaurant_matches(title, category, body):
+    if not RESTAURANT_RE.search(f"{category} {title}"):
+        return False
+    address = VISIT_ADDRESS_RE.search(body)
+    if address:
+        return bool(VISIT_AREA_RE.match(address[1].strip()))
+    region = re.match(r"^\[([^\]]+)\]", title)
+    if region and VISIT_AREA_RE.match(region[1].strip()):
+        return True
+    return any(VISIT_AREA_RE.match(part) for part in title.split())
+
+
 def apply_one(page, camp, args):
-    # 리뷰 채널 확인 ① 목록 데이터의 채널 정보와 제목 — 블로그가 아니면 페이지를 열지 않고 건너뜀
-    blog_ok = not args.sns
-    if args.sns:
-        v_list, f_list = channel_verdict(camp.get("channels", ""), args.sns)
-        v_title, f_title = channel_verdict(camp.get("title", ""), args.sns)
+    campaign_type = camp.get("type", "")
+    visit = is_visit_type(campaign_type)
+    allowed_channels = DEFAULT_SNS.split(",") if visit else args.sns
+    if not visit and allowed_channels == DEFAULT_SNS.split(",") and DOG_CAMPAIGN_RE.search(camp.get("title", "")):
+        allowed_channels = OTHER_PLATFORMS["인스타그램"]
+    # 리뷰 채널 확인 ① 목록 데이터의 채널 정보와 제목
+    channel_ok = not allowed_channels
+    if allowed_channels:
+        v_list, f_list = channel_verdict(camp.get("channels", ""), allowed_channels)
+        v_title, f_title = channel_verdict(camp.get("title", ""), allowed_channels)
         if v_title == "other" or (v_list == "other" and v_title != "blog"):
-            return f"skip:블로그 아님({','.join(f_title or f_list)})"
-        blog_ok = "blog" in (v_list, v_title)
+            return f"skip:지정 리뷰 채널 아님({','.join(f_title or f_list)})"
+        channel_ok = "blog" in (v_list, v_title)
 
     page.goto(camp["url"], wait_until="domcontentloaded")
     try:
@@ -602,7 +639,13 @@ def apply_one(page, camp, args):
         return "skip:키워드 필터"
 
     # 체험단 유형 확인 (상단 메뉴·하단 정보 글자는 빼고 본문에서만 확인)
-    if args.types:
+    if visit:
+        if not visit_restaurant_matches(camp["title"], camp.get("category", ""), body):
+            return "skip:허용 지역 맛집 방문형 아님"
+    elif campaign_type and args.types:
+        if not any(campaign_type in (kind, kind.removesuffix("형")) for kind in args.types):
+            return f"skip:유형 다름({campaign_type})"
+    elif args.types:
         content = page.evaluate(
             """() => {
                 const c = document.body.cloneNode(true);
@@ -611,21 +654,21 @@ def apply_one(page, camp, args):
                 return c.textContent.replace(/\\s+/g, ' ');
             }"""
         )
-        if not any(t in content for t in args.types):
+        if "방문형" in content or not any(t in content for t in args.types):
             other = [t for t in ["배달형", "방문형", "기자단", "배송형"] if t in content]
             return f"skip:유형 다름{('(' + ','.join(other) + ')') if other else ''}"
 
     # 리뷰 채널 확인 ② 상세 페이지의 '채널·SNS' 항목, 없으면 본문 앞부분
-    if not blog_ok:
+    if not channel_ok:
         for text in (page_channel_text(page), main_text(page)):
-            v, found = channel_verdict(text, args.sns)
+            v, found = channel_verdict(text, allowed_channels)
             if v == "other":
-                return f"skip:블로그 아님({','.join(found)})"
+                return f"skip:지정 리뷰 채널 아님({','.join(found)})"
             if v == "blog":
-                blog_ok = True
+                channel_ok = True
                 break
-        if not blog_ok:
-            return "skip:블로그 체험단인지 확인 못함"
+        if not channel_ok:
+            return "skip:지정 리뷰 채널 확인 못함"
 
     btn = find_visible_button(page, APPLY_BTN_TEXTS)
     if not btn:
@@ -642,7 +685,7 @@ def apply_one(page, camp, args):
     if "auth/login" in page.url:
         return "fail:로그인 필요 (--login 먼저 실행)"
 
-    empty = fill_form(page, args.message, args.sns)
+    empty = fill_form(page, args.message, allowed_channels)
     if empty:
         SHOT_DIR.mkdir(exist_ok=True)
         page.screenshot(path=str(SHOT_DIR / f"manual_{int(time.time())}.png"), full_page=True)
@@ -654,6 +697,7 @@ def apply_one(page, camp, args):
         page.screenshot(path=str(SHOT_DIR / f"nosubmit_{int(time.time())}.png"), full_page=True)
         return "manual:제출 버튼을 못 찾음"
 
+    camp["submission_attempted"] = True
     safe_click(submit)
     human_pause(2.0)
 
@@ -768,6 +812,11 @@ def main():
 
         # 목록 수집 (사이트 목록 데이터를 페이지 끝까지 읽음)
         campaigns = collect_campaigns(page, args.url, debug=args.debug, max_pages=args.pages)
+        if args.url == DEFAULT_LIST_URL:
+            visits = collect_campaigns(page, VISIT_LIST_URL, debug=args.debug, max_pages=args.pages)
+            by_url = {campaign["url"]: campaign for campaign in campaigns}
+            by_url.update((campaign["url"], campaign) for campaign in visits if is_visit_type(campaign["type"]))
+            campaigns = list(by_url.values())
         print(f"[목록] 총 {len(campaigns)}개 수집")
 
         if not campaigns:
@@ -818,7 +867,7 @@ def main():
                     live["records"].append(hist["records"][-1])
             live["done"] += 1
             write_live(live_path, live)
-            if result.startswith(("ok", "dry-run")):
+            if camp.get("submission_attempted") or result.startswith("dry-run"):
                 done += 1
             human_pause(args.delay, args.delay * 0.3)
 
