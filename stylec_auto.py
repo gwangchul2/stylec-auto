@@ -126,9 +126,16 @@ def load_history(path):
     return {"runs": [], "records": []}
 
 
+def history_applied_urls(history):
+    return set(history.get("submitted_urls", ())) | {
+        entry["url"] for entry in history["records"] if entry.get("status") in ("ok", "check")
+    }
+
+
 def save_history(path, h):
     if not path:
         return
+    h["submitted_urls"] = sorted(history_applied_urls(h))
     h["records"] = h["records"][-MAX_RECORDS:]
     h["runs"] = h["runs"][-MAX_RUNS:]
     h["updated_at"] = now_kst()
@@ -152,10 +159,6 @@ def write_live(path, live):
 def status_of(result):
     kind = result.split(":")[0]
     return {"ok": "ok", "ok?": "check", "manual": "manual", "fail": "fail"}.get(kind, "skip")
-
-
-def history_applied_urls(h):
-    return {r["url"] for r in h["records"] if r.get("status") in ("ok", "check")}
 
 
 # ---------------------------------------------------------------- 로그인 확인

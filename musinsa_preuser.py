@@ -102,9 +102,16 @@ def load_history(path):
     return {"runs": [], "records": []}
 
 
+def history_applied_urls(history):
+    return set(history.get("submitted_urls", ())) | {
+        entry["url"] for entry in history["records"] if entry.get("status") in ("ok", "check")
+    }
+
+
 def save_history(path, h):
     if not path:
         return
+    h["submitted_urls"] = sorted(history_applied_urls(h))
     h["records"] = h["records"][-MAX_RECORDS:]
     h["runs"] = h["runs"][-MAX_RUNS:]
     h["updated_at"] = now_kst()
@@ -651,7 +658,7 @@ def main():
             return 1
 
         # 대시보드 기록상 이미 신청한 체험단은 건너뜀
-        done_urls = {r["url"] for r in hist["records"] if r.get("status") in ("ok", "check")}
+        done_urls = history_applied_urls(hist)
         before = len(events)
         events = [e for e in events if EVENT_URL.format(id=e["id"]) not in done_urls]
         already_count = before - len(events)
