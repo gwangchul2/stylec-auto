@@ -10,7 +10,7 @@
   python stylec_auto.py                               # 미리보기 (어떤 체험단을 신청할지 확인만)
   python stylec_auto.py --apply --max 10              # 실제로 최대 10개 신청
   python stylec_auto.py --apply --include 화장품,헤어 --exclude 방문형
-  python stylec_auto.py --apply --sns ""              # 블로그 외 채널(인스타·유튜브 등)도 신청 (기본은 블로그만)
+  python stylec_auto.py --apply --sns 블로그,blog       # 리뷰 채널을 블로그로 제한
   python stylec_auto.py --export-session              # GitHub Actions 용 로그인 상태 내보내기
   python stylec_auto.py --apply --history docs/data/history.json   # 대시보드 기록 남기기
 """
@@ -62,8 +62,7 @@ DETAIL_PATTERNS = [
     re.compile(r"[?&]wr_id=\d+"),
 ]
 
-# 리뷰 채널: 여기 있는 채널로 쓸 수 있는 체험단만 신청 (기본: 블로그만). --sns 로 바꿀 수 있고, 빈 값이면 채널 상관없이 신청
-DEFAULT_SNS = "블로그,blog"
+BLOG_CHANNELS = ["블로그", "blog"]
 # 블로그가 아닌 플랫폼 (이것만 있고 블로그가 없으면 건너뜀)
 OTHER_PLATFORMS = {
     "인스타그램": ["인스타", "instagram", "릴스", "reels", "ins reels"],
@@ -618,9 +617,11 @@ def apply_one(page, camp, args):
     purchase_review = campaign_type == "구매평"
     if purchase_review and not (type(camp.get("out_of_pocket")) is int and camp["out_of_pocket"] == 0):
         return "skip:구매평 자기부담금 0원 아님"
-    allowed_channels = [] if purchase_review else DEFAULT_SNS.split(",") if visit else args.sns
-    if not (visit or purchase_review) and allowed_channels == DEFAULT_SNS.split(",") and DOG_CAMPAIGN_RE.search(camp.get("title", "")):
-        allowed_channels = OTHER_PLATFORMS["인스타그램"]
+    allowed_channels = [] if purchase_review else args.sns
+    preferred_channels = allowed_channels
+    if not (purchase_review or preferred_channels):
+        dog_campaign = not visit and DOG_CAMPAIGN_RE.search(camp.get("title", ""))
+        preferred_channels = OTHER_PLATFORMS["인스타그램"] if dog_campaign else BLOG_CHANNELS
     # 리뷰 채널 확인 ① 목록 데이터의 채널 정보와 제목
     channel_ok = not allowed_channels
     if allowed_channels:
@@ -698,7 +699,7 @@ def apply_one(page, camp, args):
     if "auth/login" in page.url:
         return "fail:로그인 필요 (--login 먼저 실행)"
 
-    empty = fill_form(page, args.message, allowed_channels)
+    empty = fill_form(page, args.message, preferred_channels)
     if empty:
         SHOT_DIR.mkdir(exist_ok=True)
         page.screenshot(path=str(SHOT_DIR / f"manual_{int(time.time())}.png"), full_page=True)
@@ -740,8 +741,8 @@ def main():
     ap.add_argument("--include", default="", help="포함 키워드(쉼표 구분) — 하나라도 있어야 신청")
     ap.add_argument("--exclude", default="", help="제외 키워드(쉼표 구분)")
     ap.add_argument("--message", default="", help="신청서의 빈 텍스트칸에 넣을 문구")
-    ap.add_argument("--sns", default=DEFAULT_SNS,
-                    help="이 채널로 리뷰를 쓸 수 있는 체험단만 신청 (쉼표 구분, 기본: 블로그). 빈 값이면 채널 상관없이 신청")
+    ap.add_argument("--sns", default="",
+                    help="이 채널로 리뷰를 쓸 수 있는 체험단만 신청 (쉼표 구분, 기본: 제한 없음). 빈 값이면 채널 상관없이 신청")
     ap.add_argument("--headless", action="store_true", help="브라우저 창 숨기기")
     ap.add_argument("--debug", action="store_true", help="링크/API 탐색 정보 출력")
     args = ap.parse_args()
