@@ -4,13 +4,7 @@ on:
   schedule:
     # 매일 한국시간 오전 10:00 (= UTC 01:00). GitHub 사정으로 10~30분 늦게 시작될 수 있음
     - cron: "0 1 * * *"
-  workflow_dispatch:
-    inputs:
-      kakao_test:
-        description: 'Send only a KakaoTalk test message'
-        type: boolean
-        default: true
-  # Actions 탭의 'Run workflow' 버튼으로 바로 실행
+  workflow_dispatch: # Actions 탭의 'Run workflow' 버튼으로 바로 실행
 
 permissions:
   contents: write # 신청 기록(docs/data/*.json) 커밋
@@ -27,7 +21,6 @@ env:
 jobs:
   # ------------------------------------------------------------ 스타일씨
   stylec:
-    if: ${{ !inputs.kakao_test }}
     name: 스타일씨
     runs-on: ubuntu-latest
     timeout-minutes: 120
@@ -100,7 +93,6 @@ jobs:
 
   # ------------------------------------------------------------ 무신사
   musinsa:
-    if: ${{ !inputs.kakao_test }}
     name: 무신사
     runs-on: ubuntu-latest
     timeout-minutes: 120
@@ -174,7 +166,7 @@ jobs:
     name: 대시보드 배포
     # 한쪽이 실패해도(로그인 만료 등) 대시보드에 상태를 보여주도록 항상 배포
     needs: [stylec, musinsa]
-    if: always() && !inputs.kakao_test
+    if: always()
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -189,17 +181,3 @@ jobs:
           path: docs
       - id: deployment
         uses: actions/deploy-pages@v4
-
-  kakao-test:
-    if: inputs.kakao_test
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-    steps:
-      - uses: actions/checkout@v4
-      - name: Send KakaoTalk test
-        env:
-          KAKAO_REST_API_KEY: ${{ secrets.KAKAO_REST_API_KEY }}
-          KAKAO_CLIENT_SECRET: ${{ secrets.KAKAO_CLIENT_SECRET }}
-          KAKAO_REFRESH_TOKEN: ${{ secrets.KAKAO_REFRESH_TOKEN }}
-        run: python .github/scripts/send-kakao.py
