@@ -297,12 +297,14 @@
     <div id="runs"></div>
   </section>
 
-  <p class="foot">매일 오전 10시에 GitHub가 스타일씨와 무신사에 자동으로 신청하고 이 페이지를 새로 고쳐요.<br>실행이 몰리면 10~30분 늦게 시작될 수 있어요.</p>
+  <p class="foot">격주 화요일 오전 10시에 GitHub가 스타일씨와 무신사에 자동으로 신청하고 이 페이지를 새로 고쳐요.<br>실행이 몰리면 10~30분 늦게 시작될 수 있어요.</p>
 </div>
 
 <script>
 (() => {
-  const RUN_HOUR_KST = 10;              // 매일 자동 신청 시각 (워크플로 cron 과 맞춤)
+  const RUN_HOUR_KST = 10;
+  const FIRST_RUN_KST = Date.UTC(2026, 10, 24, RUN_HOUR_KST); // stylec.yml과 맞춤
+  const RUN_INTERVAL_MS = 14 * 24 * 60 * 60 * 1000;
   const PAGE = 30;
   const DOW = ["일", "월", "화", "수", "목", "금", "토"];
   const SITES = {
@@ -369,10 +371,10 @@
 
   function nextRun() {
     const n = kstNow();
-    const t = new Date(Date.UTC(n.getUTCFullYear(), n.getUTCMonth(), n.getUTCDate(), RUN_HOUR_KST));
-    if (n >= t) t.setUTCDate(t.getUTCDate() + 1);
+    const periods = Math.max(0, Math.floor((n - FIRST_RUN_KST) / RUN_INTERVAL_MS) + 1);
+    const t = new Date(FIRST_RUN_KST + periods * RUN_INTERVAL_MS);
     const mins = Math.max(1, Math.round((t - n) / 60e3));
-    const when = kstDateStr(t) === todayKST() ? "오늘" : "내일";
+    const when = dayLabel(kstDateStr(t));
     const left = mins >= 60 ? `${Math.floor(mins / 60)}시간 ${mins % 60}분` : `${mins}분`;
     return `다음 자동 신청은 <strong>${when} 오전 ${RUN_HOUR_KST}시</strong>, ${left} 남았어요`;
   }
@@ -490,7 +492,7 @@
     h.classList.remove("skeleton");
     if (!connected(cur)) {
       h.innerHTML = `${esc(josa(site.name, "은", "는"))} 아직<br>연결 전이에요`;
-      $("next").innerHTML = `README의 ${esc(site.name)} 설정을 마치면 매일 오전 ${RUN_HOUR_KST}시에 함께 신청해요`;
+      $("next").innerHTML = `README의 ${esc(site.name)} 설정을 마치면 격주 화요일 오전 ${RUN_HOUR_KST}시에 함께 신청해요`;
     } else {
       if (today > 0) {
         h.innerHTML = `${esc(site.name)}에서 오늘<br><span class="count num" id="hc">${animated[cur] ? today : 0}</span>개 신청했어요`;
