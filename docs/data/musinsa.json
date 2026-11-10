@@ -1,1 +1,17 @@
-{"runs": [], "records": []}
+{
+ "runs": [
+  {
+   "started_at": "2026-11-10 16:02:47",
+   "finished_at": "2026-11-10 16:03:18",
+   "status": "success",
+   "listed": 338,
+   "ok": 0,
+   "check": 0,
+   "manual": 0,
+   "fail": 0,
+   "skip": 1
+  }
+ ],
+ "records": [],
+ "updated_at": "2026-11-10 16:03:18"
+}
