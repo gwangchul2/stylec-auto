@@ -4,7 +4,12 @@ on:
   schedule:
     # 매일 한국시간 오전 10:00 (= UTC 01:00). GitHub 사정으로 10~30분 늦게 시작될 수 있음
     - cron: "0 1 * * *"
-  workflow_dispatch: # Actions 탭의 'Run workflow' 버튼으로 바로 실행
+  workflow_dispatch:
+    inputs:
+      purchase_reviews_only:
+        description: 'Only apply to StyleC purchase reviews with zero out-of-pocket cost'
+        type: boolean
+        default: false
 
 permissions:
   contents: write # 신청 기록(docs/data/*.json) 커밋
@@ -29,6 +34,7 @@ jobs:
       APPLY_MESSAGE: "제품에 관심이 많아 꼼꼼하고 정성스럽게 리뷰 작성하겠습니다."
       # 제외할 키워드(쉼표 구분). 예: "인스타,릴스,유튜브"
       EXCLUDE: "키즈"
+      PURCHASE_REVIEWS_ONLY: ${{ inputs.purchase_reviews_only }}
       MAX_APPLICATIONS: ${{ github.event_name == 'workflow_dispatch' && '1' || '999' }}
 
     outputs:
@@ -66,7 +72,11 @@ jobs:
           # 진행 상황을 15초마다 live-stylec 브랜치에 올려 대시보드에 실시간 표시
           bash .github/scripts/live-push.sh "$LIVE" stylec loop &
           LIVE_PID=$!
-          python stylec_auto.py \
+          args=()
+          if [ "$PURCHASE_REVIEWS_ONLY" = "true" ]; then
+            args+=(--purchase-reviews-only)
+          fi
+          python stylec_auto.py "${args[@]}" \
             --apply --max "$MAX_APPLICATIONS" --headless \
             --storage-state session.json \
             --history docs/data/history.json \
@@ -102,6 +112,7 @@ jobs:
 
   # ------------------------------------------------------------ 무신사
   musinsa:
+    if: ${{ !inputs.purchase_reviews_only }}
     name: 무신사
     runs-on: ubuntu-latest
     timeout-minutes: 120

@@ -42,6 +42,8 @@ def message(stylec, musinsa, outcomes):
     items = []
     for name, info, outcome in zip(("스타일씨", "무신사"), (stylec, musinsa), outcomes):
         status = info.get("status")
+        if outcome == "skipped":
+            continue
         if status == "login_expired":
             summary.append(f"{name} 로그인 만료")
         elif outcome != "success" or status == "no_list":

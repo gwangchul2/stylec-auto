@@ -733,6 +733,7 @@ def main():
     ap.add_argument("--storage-state", default="", help="로그인 상태 파일(session.json)로 실행 (GitHub Actions 용)")
     ap.add_argument("--history", default="", help="대시보드 기록 파일 경로 (예: docs/data/history.json)")
     ap.add_argument("--live", default="", help="실행 중 진행 상황 파일 경로 (대시보드 실시간 표시용)")
+    ap.add_argument("--purchase-reviews-only", action="store_true")
     ap.add_argument("--apply", action="store_true", help="실제로 신청 (없으면 미리보기)")
     ap.add_argument("--max", type=int, default=20, help="이번 실행에서 최대 신청 개수")
     ap.add_argument("--delay", type=float, default=6.0, help="체험단 사이 대기 시간(초)")
@@ -824,8 +825,13 @@ def main():
             return finish(2)
 
         # 목록 수집 (사이트 목록 데이터를 페이지 끝까지 읽음)
-        campaigns = collect_campaigns(page, args.url, debug=args.debug, max_pages=args.pages)
-        if args.url == DEFAULT_LIST_URL:
+        if args.purchase_reviews_only:
+            campaigns = [campaign for campaign in collect_campaigns(
+                page, PURCHASE_REVIEW_LIST_URL, debug=args.debug, max_pages=args.pages
+            ) if campaign["type"] == "구매평"]
+        else:
+            campaigns = collect_campaigns(page, args.url, debug=args.debug, max_pages=args.pages)
+        if not args.purchase_reviews_only and args.url == DEFAULT_LIST_URL:
             visits = collect_campaigns(page, VISIT_LIST_URL, debug=args.debug, max_pages=args.pages)
             by_url = {campaign["url"]: campaign for campaign in campaigns}
             by_url.update((campaign["url"], campaign) for campaign in visits if is_visit_type(campaign["type"]))
