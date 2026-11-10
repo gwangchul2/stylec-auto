@@ -1,1 +1,27 @@
-{"runs": [], "records": []}
+{
+ "runs": [
+  {
+   "started_at": "2026-11-10 16:02:35",
+   "finished_at": "2026-11-10 16:03:31",
+   "status": "success",
+   "listed": 344,
+   "ok": 1,
+   "check": 0,
+   "manual": 0,
+   "fail": 0,
+   "skip": 0
+  }
+ ],
+ "records": [
+  {
+   "at": "2026-11-10 16:03:25",
+   "status": "ok",
+   "result": "ok:신청 완료",
+   "title": "[브라운물티슈] 물티슈 최초 설계 라인 엣지 카키 체험단",
+   "url": "https://www.stylec.co.kr/trials/160373",
+   "image": "https://stylec-s3.s3.ap-northeast-2.amazonaws.com/data/editors/1793756754995.jpg",
+   "img_checked": true
+  }
+ ],
+ "updated_at": "2026-11-10 16:03:31"
+}
