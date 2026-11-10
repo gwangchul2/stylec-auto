@@ -10,6 +10,10 @@ on:
         description: 'Only apply to StyleC purchase reviews with zero out-of-pocket cost'
         type: boolean
         default: false
+      purchase_review_limit:
+        description: 'Maximum StyleC purchase-review applications (1–999)'
+        type: number
+        default: 1
 
 permissions:
   contents: write # 신청 기록(docs/data/*.json) 커밋
@@ -35,6 +39,7 @@ jobs:
       # 제외할 키워드(쉼표 구분). 예: "인스타,릴스,유튜브"
       EXCLUDE: "키즈"
       PURCHASE_REVIEWS_ONLY: ${{ inputs.purchase_reviews_only }}
+      PURCHASE_REVIEW_LIMIT: ${{ inputs.purchase_review_limit }}
       MAX_APPLICATIONS: ${{ github.event_name == 'workflow_dispatch' && '1' || '999' }}
 
     outputs:
@@ -68,14 +73,19 @@ jobs:
       - name: 체험단 신청
         run: |
           set +e
+          args=()
+          if [ "$PURCHASE_REVIEWS_ONLY" = "true" ]; then
+            if [[ ! "$PURCHASE_REVIEW_LIMIT" =~ ^[1-9][0-9]{0,2}$ ]]; then
+              echo "::error::Purchase-review limit must be an integer from 1 to 999."
+              exit 1
+            fi
+            MAX_APPLICATIONS="$PURCHASE_REVIEW_LIMIT"
+            args+=(--purchase-reviews-only)
+          fi
           LIVE="$RUNNER_TEMP/live.json"
           # 진행 상황을 15초마다 live-stylec 브랜치에 올려 대시보드에 실시간 표시
           bash .github/scripts/live-push.sh "$LIVE" stylec loop &
           LIVE_PID=$!
-          args=()
-          if [ "$PURCHASE_REVIEWS_ONLY" = "true" ]; then
-            args+=(--purchase-reviews-only)
-          fi
           python stylec_auto.py "${args[@]}" \
             --apply --max "$MAX_APPLICATIONS" --headless \
             --storage-state session.json \
