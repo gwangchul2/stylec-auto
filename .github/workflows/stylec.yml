@@ -2,7 +2,7 @@ name: 체험단 자동 신청
 
 on:
   schedule:
-    # 매주 화요일 한국시간 오전 10시, 아래에서 격주로 신청합니다.
+    # 매주 화요일 한국시간 오전 10시에 신청합니다.
     - cron: "0 10 * * TUE"
       timezone: Asia/Seoul
   workflow_dispatch:
@@ -29,31 +29,8 @@ env:
   PYTHONUNBUFFERED: "1" # 진행 상황이 로그에 실시간으로 보이도록
 
 jobs:
-  cadence:
-    runs-on: ubuntu-latest
-    permissions: {}
-    outputs:
-      due: ${{ steps.schedule.outputs.due }}
-    steps:
-      - id: schedule
-        shell: python
-        run: |
-          import os
-          import time
-          from datetime import datetime
-
-          first = datetime.fromisoformat("2026-11-24T00:00:00+09:00").timestamp()
-          elapsed = time.time() - first
-          due = os.environ["GITHUB_EVENT_NAME"] != "schedule" or (
-              elapsed >= 0 and (elapsed // 604800) % 2 == 0
-          )
-          with open(os.environ["GITHUB_OUTPUT"], "a") as output:
-              print("due=" + str(due).lower(), file=output)
-
   # ------------------------------------------------------------ 스타일씨
   stylec:
-    needs: cadence
-    if: needs.cadence.outputs.due == 'true'
     name: 스타일씨
     runs-on: ubuntu-latest
     timeout-minutes: 120
@@ -146,8 +123,7 @@ jobs:
 
   # ------------------------------------------------------------ 무신사
   musinsa:
-    needs: cadence
-    if: needs.cadence.outputs.due == 'true' && !inputs.purchase_reviews_only
+    if: ${{ !inputs.purchase_reviews_only }}
     name: 무신사
     runs-on: ubuntu-latest
     timeout-minutes: 120
@@ -230,8 +206,8 @@ jobs:
   deploy:
     name: 대시보드 배포
     # 한쪽이 실패해도(로그인 만료 등) 대시보드에 상태를 보여주도록 항상 배포
-    needs: [cadence, stylec, musinsa]
-    if: always() && needs.cadence.outputs.due == 'true'
+    needs: [stylec, musinsa]
+    if: always()
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -248,8 +224,8 @@ jobs:
         uses: actions/deploy-pages@v4
 
   notify:
-    needs: [cadence, stylec, musinsa, deploy]
-    if: always() && !cancelled() && needs.cadence.outputs.due == 'true'
+    needs: [stylec, musinsa, deploy]
+    if: always() && !cancelled()
     runs-on: ubuntu-latest
     permissions:
       contents: read
