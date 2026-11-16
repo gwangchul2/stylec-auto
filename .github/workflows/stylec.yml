@@ -112,15 +112,6 @@ jobs:
         if: always()
         run: bash .github/scripts/commit-history.sh docs/data/history.json "스타일씨"
 
-      - name: 직접 확인이 필요한 화면 저장
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: stylec-screenshots
-          path: screenshots/
-          if-no-files-found: ignore
-          retention-days: 7
-
   # ------------------------------------------------------------ 무신사
   musinsa:
     if: ${{ !inputs.purchase_reviews_only }}
@@ -193,12 +184,12 @@ jobs:
         if: always() && steps.session.outputs.ok == 'true'
         run: bash .github/scripts/commit-history.sh docs/data/musinsa.json "무신사"
 
-      - name: 로그·스크린샷 저장
+      - name: 텍스트 로그 저장
         if: always() && steps.session.outputs.ok == 'true'
         uses: actions/upload-artifact@v4
         with:
           name: musinsa-logs
-          path: logs/
+          path: logs/**/*.txt
           if-no-files-found: ignore
           retention-days: 7
 

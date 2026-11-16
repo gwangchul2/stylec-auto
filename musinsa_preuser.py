@@ -14,7 +14,7 @@
 3) 실제 실행 (하루 한 번)
        python musinsa_preuser.py
 
-결과는 logs/날짜_시간/ 폴더에 log.txt 와 스크린샷으로 남습니다.
+결과는 logs/날짜_시간/ 폴더에 log.txt 로 남습니다. 개인정보 보호를 위해 스크린샷은 촬영하지 않습니다.
 
 4) GitHub 자동 실행용 로그인 상태 내보내기 (로그인 후)
        python musinsa_preuser.py --export-session
@@ -256,14 +256,6 @@ def nap(a=None, b=None):
     time.sleep(random.uniform(a, b))
 
 
-def shot(page, name: str):
-    safe = re.sub(r"[^\w가-힣-]+", "_", name)[:60]
-    try:
-        page.screenshot(path=str(LOG_DIR / f"{safe}.png"), full_page=True)
-    except Exception:
-        pass
-
-
 def visible(locator, timeout=1500) -> bool:
     try:
         locator.first.wait_for(state="visible", timeout=timeout)
@@ -473,7 +465,6 @@ def apply_one(page, ev, dry_run: bool) -> str:
 
     apply_btn = page.get_by_role("button", name=re.compile(r"^\s*신청하기"))
     if not visible(apply_btn, 5000):
-        shot(page, f"no_button_{ev['id']}")
         return "FAIL (신청하기 버튼 없음)"
     apply_btn.first.click()
     nap(1, 1.5)
@@ -522,8 +513,7 @@ def apply_one(page, ev, dry_run: bool) -> str:
                 done.first.click()
                 nap(1, 1.5)
                 continue
-            shot(page, f"option_stuck_{ev['id']}")
-            return "FAIL (옵션을 다 못 고름 - 스크린샷 확인)"
+            return "FAIL (옵션을 다 못 고름)"
 
         again = page.get_by_role("button", name=re.compile(r"^\s*신청하기"))
         if visible(again, 500):
@@ -539,7 +529,6 @@ def apply_one(page, ev, dry_run: bool) -> str:
     try:
         page.wait_for_url(re.compile(r"/preuser/apply/"), timeout=8000)
     except PWTimeout:
-        shot(page, f"no_applypage_{ev['id']}")
         extra = f" alert: {dialogs[-1]}" if dialogs else ""
         return "FAIL (신청서 화면으로 못 넘어감)" + extra
 
@@ -555,7 +544,6 @@ def apply_one(page, ev, dry_run: bool) -> str:
 
     submit = page.get_by_role("button", name=re.compile(r"^\s*신청\s*완료\s*$"))
     if not visible(submit, 5000):
-        shot(page, f"no_submit_{ev['id']}")
         return "FAIL (신청 완료 버튼 없음)"
 
     if submit.last.is_disabled():
@@ -569,7 +557,6 @@ def apply_one(page, ev, dry_run: bool) -> str:
             nap(0.5, 1)
 
     if dry_run:
-        shot(page, f"dryrun_{ev['id']}")
         return "DRY-RUN (신청 완료 직전까지 진행)"
 
     submit.last.click()
@@ -577,9 +564,8 @@ def apply_one(page, ev, dry_run: bool) -> str:
         page.get_by_text(DONE_MSG).first.wait_for(state="visible", timeout=8000)
         return "OK (신청 완료)"
     except PWTimeout:
-        shot(page, f"result_{ev['id']}")
         extra = f" alert: {dialogs[-1]}" if dialogs else ""
-        return "UNKNOWN (완료 메시지 미확인 - 스크린샷 확인)" + extra
+        return "UNKNOWN (완료 메시지 미확인 - MY체험단에서 확인)" + extra
 
 
 # ------------------------------------------------------------
@@ -678,7 +664,6 @@ def main():
             try:
                 result = apply_one(page, ev, args.dry_run)
             except Exception as e:
-                shot(page, f"error_{ev['id']}")
                 result = f"ERROR ({type(e).__name__}: {str(e)[:150]})"
             log(f"    -> {result}")
             key = result.split()[0]

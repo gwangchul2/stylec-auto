@@ -50,7 +50,6 @@ DEFAULT_TYPES = "제공형"
 LIST_MARKER = "다른 체험단도 둘러볼까요"
 PROFILE_DIR = Path("stylec_profile")
 LOG_FILE = Path("applied_log.json")
-SHOT_DIR = Path("screenshots")
 KST = timezone(timedelta(hours=9))
 USER_AGENT = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
               "(KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36")
@@ -704,14 +703,10 @@ def apply_one(page, camp, args):
 
     empty = fill_form(page, args.message, preferred_channels)
     if empty:
-        SHOT_DIR.mkdir(exist_ok=True)
-        page.screenshot(path=str(SHOT_DIR / f"manual_{int(time.time())}.png"), full_page=True)
         return f"manual:필수칸 비어 있음 {empty}"
 
     submit = find_visible_button(page, SUBMIT_BTN_TEXTS)
     if not submit:
-        SHOT_DIR.mkdir(exist_ok=True)
-        page.screenshot(path=str(SHOT_DIR / f"nosubmit_{int(time.time())}.png"), full_page=True)
         return "manual:제출 버튼을 못 찾음"
 
     camp["submission_attempted"] = True

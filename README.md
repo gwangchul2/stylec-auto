@@ -82,8 +82,8 @@ python musinsa_preuser.py --export-session
 - **스타일씨 리뷰 채널**: **블로그로 쓸 수 있는 체험단만** 신청합니다 (인스타그램·릴스·유튜브·쇼츠·틱톡·네이버 클립·스레드 전용은 제외, 블로그와 둘 중 고르는 건 블로그로 신청, 채널을 확인하지 못하면 신청하지 않음). 채널 상관없이 신청하려면 `stylec.yml` 의 신청 명령에 `--sns ""` 를 붙이세요.
 - **무신사 사이즈·색상·제외 키워드**: `musinsa_preuser.py` 위쪽 설정 (`SHOE_SIZE`, `RING_SIZE`, `PREFERRED_OPTIONS`, `EXCLUDE_KEYWORDS` 등).
 - **실행 시각**: `stylec.yml` 의 `cron`, `docs/index.html`의 `RUN_HOUR_KST`와 `FIRST_RUN_KST` 를 함께 바꾸세요.
-- **직접 신청이 필요한 건**: Actions 실행 결과 하단 **Artifacts** 에 화면이 저장됩니다
-  (`stylec-screenshots`, `musinsa-logs`).
+- **직접 확인이 필요한 건**: 대시보드의 신청 결과와 무신사 텍스트 로그(`musinsa-logs`)를 확인하세요.
+  개인정보 보호를 위해 두 사이트 모두 스크린샷을 촬영하거나 업로드하지 않습니다.
 
 ## 알아둘 점
 
