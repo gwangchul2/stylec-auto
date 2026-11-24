@@ -43,9 +43,20 @@
    "manual": 0,
    "fail": 0,
    "skip": 0
+  },
+  {
+   "started_at": "2026-11-24 19:46:11",
+   "finished_at": "2026-11-24 19:46:13",
+   "status": "no_list",
+   "listed": 0,
+   "ok": 0,
+   "check": 0,
+   "manual": 0,
+   "fail": 0,
+   "skip": 0
   }
  ],
  "records": [],
- "updated_at": "2026-11-17 17:57:08",
+ "updated_at": "2026-11-24 19:46:13",
  "submitted_urls": []
 }
